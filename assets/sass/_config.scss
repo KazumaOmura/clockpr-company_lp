@@ -1,0 +1,54 @@
+//ブレークポイント
+$breakpoints: (
+//キー:値
+  'sm':  'screen and (max-width: 767px)', //スマホ幅
+  'md': 'screen and (min-width: 768px) and (max-width: 1023px)', //タブレット幅
+  'lg':  'screen and (min-width: 1024px)' //PC幅
+) !default;
+
+//メディア特性(hover)
+$hover-possibilities: (
+  'hp':'(hover: hover)', /* hover possible:hover指定できるPCを想定したスタイル */
+  'hi':'(hover: none)',  /* hover impossible:hoverが使えないタッチ端末を想定した装飾 */
+) !default;
+
+//font
+$font-family-1: 'Lato', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'Noto Sans JP', sans-serif;
+$font-family-2: 'Open Sans', 'Noto Sans JP', sans-serif;
+
+@font-face {
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://storage.googleapis.com/production-os-assets/assets/material-icons/1629704621943/MaterialIcons-Regular.eot);
+  src: local("Material Icons"),
+        local("MaterialIcons-Regular"),
+        url(https://storage.googleapis.com/production-os-assets/assets/material-icons/1629704621943/MaterialIcons-Regular.woff2) format("woff2"),
+        url(https://storage.googleapis.com/production-os-assets/assets/material-icons/1629704621943/MaterialIcons-Regular.woff) format("woff"),
+        url(https://storage.googleapis.com/production-os-assets/assets/material-icons/1629704621943/MaterialIcons-Regular.ttf) format("truetype")
+}
+
+//color 共通
+$color-bg-light1: #fff;
+$color-bg-light2: #f2f2f2;
+$color-bg-light3: #f8fbff;
+$color-bg-dark: #081640;
+$color-dark1: #242528;
+$color-dark2: #333;
+$color-light1: #fff;
+$color-light2: rgba(255, 255, 255, 0.8);
+$color-light3: rgba(36, 37, 40, 0.7);
+$color-sub1: #0040ff;
+$color-sub2: #57ffa5;
+
+//size
+$size-header-height-lg: 90px;
+$size-header-height-md: 80px;
+$size-header-height-sm: 60px;
+$size-inner: 32px;
+
+// z-index
+$layer: (
+  header: 900, // ヘッダー
+  default: 0, //default
+);
